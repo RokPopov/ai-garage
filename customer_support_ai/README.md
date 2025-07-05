@@ -75,6 +75,77 @@ for ticket in df['ticket']:
 
 ## Project Structure
 
+## Testing
+
+```bash
+# Run all tests
+pytest -m evals/test_classification_assertions.py -v
+
+# Run tests that don't require API key
+pytest -m evals/test_classification_assertions.py -v -m "not skipif"
+```
+
+## 🚀 CI/CD with GitHub Actions
+
+This project includes automated testing using GitHub Actions.
+
+### Setting Up GitHub Actions
+
+1. **Configure Actions Permissions**
+
+   Go to your GitHub repository → Settings → Actions → General
+
+   **Actions permissions:**
+   - Select "Allow all actions and reusable workflows"
+   - This allows the repository to use any GitHub Actions from the marketplace
+
+   **Workflow permissions:**
+   - Select "Read and write permissions"
+   - This allows workflows to read repository contents and write back results (like test reports, artifacts, etc.)
+   - Check "Allow GitHub Actions to create and approve pull requests" if you want automated PR creation
+
+2. **Copy Workflow Files**
+
+   Copy the existing GitHub workflow files from the root of this project:
+   - Copy `.github/workflows/` directory from the project root
+   - Place it in the root of your repository (not inside `customer_support_ai/`)
+   - Adjust file paths in the workflow files if your project structure differs
+
+   **Important:** The workflow files expect the Python code to be in the `customer_support_ai/` directory. If your structure is different, update the paths in the workflow YAML files accordingly.
+
+### GitHub Secrets Setup
+
+1. **Navigate to Repository Settings**
+   - Go to your GitHub repository
+   - Click on "Settings" tab
+   - Select "Secrets and variables" → "Actions"
+
+2. **Add Required Secrets**
+   - Click "New repository secret"
+   - Add `OPENAI_API_KEY` with your OpenAI API key
+   - Add any other environment variables your app needs
+
+3. **Optional Secrets for Deployment**
+   - `DEPLOY_KEY`: SSH key or API token for deployment
+   - `DOCKER_USERNAME` & `DOCKER_PASSWORD`: For Docker Hub
+   - `AWS_ACCESS_KEY_ID` & `AWS_SECRET_ACCESS_KEY`: For AWS deployment
+
+### Workflow Features
+
+- **Automated Testing**: Runs on every push and pull request to `main`
+- **Environment Isolation**: Each job runs in a fresh Ubuntu environment
+- **Secure Secrets**: API keys and sensitive data are encrypted
+- **Branch Protection**: Only trigger from `main` branch
+- **Status Checks**: See test results directly in pull requests
+
+### Troubleshooting
+
+- **Tests failing**: Check if all required secrets are set
+- **API rate limits**: Consider using test mocks for frequent runs
+- **Dependencies**: Ensure `requirements.txt` is up to date
+- **Permission errors**: Verify Actions permissions are set to "Allow all actions and reusable workflows"
+- **Workflow not running**: Check that Workflow permissions are set to "Read and write permissions"
+
 ## 🤝 Contributing
 
 1. Fork the repository
@@ -108,13 +179,3 @@ This project is licensed under the MIT License - see the [LICENSE](../LICENSE) f
 - Collab or Sponsorship
 - Website or Tech Issue
 - Something Else
-
-## Testing
-
-```bash
-# Run all tests
-pytest -m evals/test_classification_assertions.py -v
-
-# Run tests that don't require API key
-pytest -m evals/test_classification_assertions.py -v -m "not skipif"
-```
