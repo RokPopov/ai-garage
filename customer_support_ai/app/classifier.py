@@ -28,7 +28,3 @@ class TicketClassifier:
     def batch_predict(self, tickets: list[str]) -> list[TicketClassification]:
         """Classify multiple tickets in batch."""
         return [self.classify(ticket) for ticket in tickets]
-    
-    def _get_system_prompt(self) -> str:
-        """Minimal system prompt. Rely on the response model enforces structure."""
-        return "Classify this customer support ticket into the most appropriate category."
