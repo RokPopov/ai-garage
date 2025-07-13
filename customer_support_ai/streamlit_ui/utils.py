@@ -61,12 +61,6 @@ def get_classification_stats(df: pd.DataFrame) -> pd.DataFrame:
     
     return stats_df
 
-def get_sample_results(df: pd.DataFrame, n: int = 5) -> pd.DataFrame:
-    """Get sample classified results."""
-    sample_df = df[['first_name', 'message', 'category']].head(n).copy()
-    sample_df['message'] = sample_df['message'].str[:100] + '...'
-    return sample_df
-
 def prepare_download_data(df: pd.DataFrame) -> bytes:
     """Prepare classified data for download."""
     return df.to_csv(index=False).encode('utf-8')
