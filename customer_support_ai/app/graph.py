@@ -24,7 +24,7 @@ def classify_node(state: TicketState) -> TicketState:
 
         classifier = TicketClassifier(
             api_key=api_key,
-            model_name=state.get("model_name", "gpt-4o-mini"),
+            model_name=state.get("model_name", "gpt-4.1"),
             temperature=state.get("temperature", 0.1)
         )
         result = classifier.classify(state["message"])
@@ -54,7 +54,7 @@ def build_classification_graph():
     graph.add_edge("classify", END)
     return graph.compile()
 
-def classify_ticket(message: str, api_key: str | None = None, model_name: str = "gpt-4o-mini", temperature: float = 0.1) -> str:
+def classify_ticket(message: str, api_key: str | None = None, model_name: str = "gpt-4.1", temperature: float = 0.1) -> str:
     """Classify a ticket using LangGraph workflow."""
     graph = build_classification_graph()
 
