@@ -1,0 +1,52 @@
+EMPLOYMENT AGREEMENT
+
+This Employment Agreement ("Agreement") is entered into on January 15, 2024, between Tech Solutions BV ("Company") and John Doe ("Employee").
+
+EMPLOYEE INFORMATION:
+Full Name: John Doe
+Date of Birth: March 12, 1990
+Address: Prinsengracht 123, 1015 DX Amsterdam, Netherlands
+Phone: +31 6 1234 5678
+Email: john.doe@email.com
+
+EMPLOYMENT DETAILS:
+Position: Senior Software Engineer
+Department: Engineering
+Start Date: February 1, 2024
+Employment Type: Full-time permanent contract
+Probation Period: 3 months
+
+COMPENSATION & BENEFITS:
+Gross Monthly Salary: €6,500
+Annual Gross Salary: €78,000
+Holiday Allowance: 8% of annual salary
+13th Month Bonus: Yes
+
+Working Hours: 40 hours per week
+Holiday Entitlement: 25 days per year
+Pension Contribution: 6% (employer), 4% (employee)
+
+ADDITIONAL BENEFITS:
+- Health insurance allowance: €150/month
+- Travel allowance: €200/month
+- Professional development budget: €2,000/year
+- Work-from-home allowance: €2 per day
+- Laptop and equipment provided
+
+COMPANY INFORMATION:
+Employer: Tech Solutions BV
+Registration Number: 12345678
+Address: Herengracht 456, 1017 CA Amsterdam, Netherlands
+Contact: hr@techsolutions.nl
+
+TERMS AND CONDITIONS:
+- Notice period: 1 month during probation, 2 months after
+- Flexible working hours between 8:00-18:00
+- Hybrid work policy: 3 days office, 2 days remote
+- Performance review: Annual
+
+This contract is governed by Dutch employment law.
+
+Signed:
+Employee: John Doe                    Date: January 15, 2024
+Company: Tech Solutions BV           Date: January 15, 2024

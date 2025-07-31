@@ -1,0 +1,63 @@
+PAYSLIP - March 2024
+
+Tech Solutions BV
+Herengracht 456, 1017 CA Amsterdam
+Chamber of Commerce: 12345678
+
+EMPLOYEE INFORMATION:
+Employee Name: Jane Smith
+Employee Number: EMP001
+Date of Birth: June 8, 1985
+IBAN: NL91ABNA0417164300
+Contract Type: Full-time permanent
+Weekly Hours: 40
+Part-time Percentage: 100%
+
+CURRENT PERIOD (March 2024):
+Pay Period: March 1 - March 31, 2024
+Work Days This Period: 22
+
+EARNINGS:
+Gross Salary: €5,200.00
+Holiday Allowance: €416.00
+Overtime Hours: 4 @ €35/hour = €140.00
+Performance Bonus: €500.00
+Total Gross: €6,256.00
+
+DEDUCTIONS:
+Income Tax Withheld: €1,435.00
+Social Security Contributions: €312.80
+Pension Contribution (Employee): €208.00
+Health Insurance: €135.00
+Total Deductions: €2,090.80
+
+NET SALARY PAID: €4,165.20
+
+EMPLOYER CONTRIBUTIONS:
+Pension Contribution (Employer): €312.00
+ZVW Employer Contribution: €89.50
+Social Security (Employer): €625.60
+
+YEAR-TO-DATE TOTALS (January - March 2024):
+Fiscal Wage to Date: €17,500.00
+Social Security Wage to Date: €17,500.00
+Cumulative Tax Withheld: €4,025.00
+Cumulative Tax Credit: €345.00
+Annual Gross Salary: €62,400.00
+
+LEAVE BALANCE:
+Holiday Days Remaining: 18.5 days
+Sick Days Used YTD: 2 days
+
+ADDITIONAL INFORMATION:
+Tax Year: 2024
+Tax Period: 03
+BSN: 123456789
+Payroll Number: PAY001
+
+Payment Date: March 31, 2024
+Payment Method: Bank Transfer
+
+For questions regarding this payslip, contact:
+HR Department: hr@techsolutions.nl
+Phone: +31 20 123 4567

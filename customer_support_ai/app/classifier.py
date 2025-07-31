@@ -5,7 +5,7 @@ from .models import TicketClassification
 class TicketClassifier:
     """Structured ticket classification using Instructor + Pydantic."""
     
-    def __init__(self, api_key: str, model_name: str = "gpt-4o-mini", temperature: float = 0.1) -> None:
+    def __init__(self, api_key: str, model_name: str = "gpt-4.1", temperature: float = 0.1) -> None:
         self.client = instructor.from_openai(
             OpenAI(api_key=api_key),
             mode=instructor.Mode.TOOLS
